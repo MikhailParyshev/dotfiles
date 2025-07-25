@@ -1,0 +1,12 @@
+[font]
+size = 18
+
+[font.normal]
+family = "BlexMono Nerd Font Mono"
+style = "Regular"
+
+[general]
+import = ["~/.config/alacritty/themes/themes/solarized_dark.toml"]
+
+[window]
+startup_mode = "Fullscreen"
