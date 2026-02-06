@@ -116,5 +116,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# В ~/.bashrc после установки fzf
+[ -f /usr/share/fzf/key-bindings.bash ] && source /usr/share/fzf/key-bindings.bash
+[ -f /usr/share/fzf/completion.bash ] && source /usr/share/fzf/completion.bash
+
+__fzf_open_vim() { vim "$(fzf)"; }
+bind -x '"\C-j":"__fzf_open_vim"'
+
 xset r on
 setxkbmap "us,ru" ",winkeys" "grp:win_space_toggle"
